@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARKA Enterprises — Solar Solutions | Karjat, Raigad</title>
+<meta name="description" content="Complete solar energy solutions in Karjat, Raigad — on-grid, off-grid and hybrid rooftop systems for homes, housing societies, farms and industries. Government subsidy assistance under PM Surya Ghar Yojana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0D2137; --navy2:#16324A; --amber:#F49D1D; --amber-deep:#DB7C00;
+  --sky:#EAF2F7; --white:#FFFFFF; --line:#D8E2EA; --ink-soft:#41586C;
+  --disp:'Bricolage Grotesque',sans-serif; --body:'IBM Plex Sans',sans-serif; --mono:'IBM Plex Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--navy);background:var(--white);line-height:1.6;font-size:16px}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+.eyebrow{font-family:var(--mono);font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--amber-deep);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--amber)}
+h2{font-family:var(--disp);font-weight:800;font-size:clamp(1.7rem,3.6vw,2.5rem);line-height:1.12;letter-spacing:-.01em;margin-bottom:14px}
+.sec{padding:84px 0}
+.sec.alt{background:var(--sky)}
+.lead{color:var(--ink-soft);max-width:62ch}
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--disp);font-weight:700;font-size:.95rem;padding:13px 24px;border-radius:8px;transition:transform .15s ease,box-shadow .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-amber{background:var(--amber);color:var(--navy);box-shadow:0 6px 18px rgba(244,157,29,.35)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.45);color:#fff}
+.btn-navy{background:var(--navy);color:#fff}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:var(--navy);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;flex-direction:column;line-height:1.05}
+.brand b{font-family:var(--disp);font-weight:800;font-size:1.15rem;color:#fff;letter-spacing:.02em}
+.brand span{font-family:var(--mono);font-size:.6rem;letter-spacing:.32em;color:var(--amber)}
+.nav-links{display:flex;gap:26px;font-size:.9rem;color:#CBDAE6}
+.nav-links a:hover{color:var(--amber)}
+.nav-call{font-family:var(--mono);font-size:.85rem;color:var(--navy);background:var(--amber);padding:9px 16px;border-radius:7px;font-weight:600;white-space:nowrap}
+@media(max-width:860px){.nav-links{display:none}}
+
+/* HERO */
+header{position:relative;background:var(--navy);color:#fff;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42}
+.hero-grad{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,33,55,.55) 0%,rgba(13,33,55,.85) 78%,var(--navy) 100%)}
+.hero-arc{position:absolute;left:50%;bottom:-340px;transform:translateX(-50%);width:1300px;height:650px;border-radius:650px 650px 0 0;background:radial-gradient(ellipse at 50% 100%,rgba(244,157,29,.5),rgba(244,157,29,0) 68%);pointer-events:none}
+.hero-in{position:relative;padding:110px 0 96px;max-width:760px}
+.hero-kicker{font-family:var(--mono);font-size:.78rem;letter-spacing:.24em;color:var(--amber);text-transform:uppercase;margin-bottom:18px}
+h1{font-family:var(--disp);font-weight:800;font-size:clamp(2.3rem,5.6vw,4rem);line-height:1.06;letter-spacing:-.015em;margin-bottom:20px}
+h1 em{font-style:normal;color:var(--amber)}
+.hero-sub{color:#C7D7E4;font-size:1.08rem;max-width:56ch;margin-bottom:32px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-note{margin-top:26px;font-family:var(--mono);font-size:.78rem;color:#8FA9BD}
+
+/* STATS STRIP */
+.strip{background:var(--amber)}
+.strip-in{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(13,33,55,.18)}
+.strip .cell{background:var(--amber);padding:20px 18px;text-align:center}
+.strip b{font-family:var(--disp);font-weight:800;font-size:1.35rem;display:block;color:var(--navy)}
+.strip span{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#6B4A05}
+@media(max-width:700px){.strip-in{grid-template-columns:repeat(2,1fr)}}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.about-img{border-radius:14px;overflow:hidden;box-shadow:14px 14px 0 var(--sky), 14px 14px 0 1px var(--line)}
+.about-img img{width:100%;height:480px;object-fit:cover}
+.tick-list{margin-top:22px;display:grid;gap:10px}
+.tick-list li{list-style:none;display:flex;gap:11px;align-items:flex-start;color:var(--ink-soft)}
+.tick-list li::before{content:"✓";flex:0 0 22px;height:22px;border-radius:6px;background:var(--sky);color:var(--amber-deep);font-weight:700;display:grid;place-items:center;font-size:.8rem;margin-top:2px}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr}.about-img img{height:340px}}
+
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease}
+.svc:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(13,33,55,.12)}
+.svc img{height:170px;width:100%;object-fit:cover}
+.svc-body{padding:22px 22px 26px;flex:1}
+.svc-tag{font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--amber-deep);margin-bottom:8px}
+.svc h3{font-family:var(--disp);font-weight:700;font-size:1.2rem;margin-bottom:8px}
+.svc p{font-size:.92rem;color:var(--ink-soft);margin-bottom:12px}
+.svc ul{list-style:none;display:grid;gap:6px}
+.svc ul li{font-size:.86rem;color:var(--navy);padding-left:18px;position:relative}
+.svc ul li::before{content:"›";position:absolute;left:2px;color:var(--amber-deep);font-weight:700}
+@media(max-width:860px){.svc-grid{grid-template-columns:1fr}}
+
+/* WHY */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.why{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px}
+.why b{font-family:var(--disp);font-weight:700;font-size:1rem;display:block;margin-bottom:6px}
+.why p{font-size:.88rem;color:var(--ink-soft)}
+.why .ic{width:38px;height:38px;border-radius:9px;background:var(--navy);color:var(--amber);display:grid;place-items:center;font-size:1.05rem;margin-bottom:13px}
+@media(max-width:860px){.why-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.why-grid{grid-template-columns:1fr}}
+
+/* SUBSIDY */
+.sub-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:40px;align-items:start}
+.bill{background:#FFFDF6;border:1px solid #EAD9AF;border-radius:14px;padding:28px;font-family:var(--mono);position:relative;box-shadow:0 14px 34px rgba(219,124,0,.1)}
+.bill::before{content:"PM SURYA GHAR · MUFT BIJLI YOJANA";position:absolute;top:-11px;left:22px;background:var(--navy);color:var(--amber);font-size:.62rem;letter-spacing:.14em;padding:5px 12px;border-radius:5px}
+.bill h3{font-family:var(--disp);font-size:1.25rem;margin:8px 0 4px}
+.bill .sub-note{font-size:.74rem;color:#8A7340;margin-bottom:18px}
+.bill-row{display:flex;justify-content:space-between;align-items:baseline;padding:13px 0;border-bottom:1px dashed #D9C89B;font-size:.9rem}
+.bill-row:last-of-type{border-bottom:none}
+.bill-row b{font-size:1.25rem;color:var(--amber-deep)}
+.bill-foot{margin-top:16px;font-size:.72rem;color:#8A7340;border-top:2px solid var(--navy);padding-top:12px}
+.sub-side{display:grid;gap:20px}
+.sub-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px}
+.sub-card h3{font-family:var(--disp);font-size:1.15rem;margin-bottom:8px}
+.sub-card p{font-size:.9rem;color:var(--ink-soft);margin-bottom:10px}
+.chiplist{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chip{font-family:var(--mono);font-size:.72rem;background:var(--sky);border:1px solid var(--line);border-radius:999px;padding:5px 12px;color:var(--navy)}
+.soc-imgs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.soc-imgs img{border-radius:9px;height:120px;width:100%;object-fit:cover}
+@media(max-width:860px){.sub-grid{grid-template-columns:1fr}}
+
+/* PRODUCTS */
+.prod-block{margin-top:44px}
+.prod-block h3{font-family:var(--disp);font-weight:700;font-size:1.3rem;margin-bottom:18px;display:flex;align-items:center;gap:12px}
+.prod-block h3::after{content:"";flex:1;height:1px;background:var(--line)}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.prod{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.prod img{height:160px;width:100%;object-fit:cover;background:var(--sky)}
+.prod span{display:block;font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;padding:11px 14px;color:var(--navy)}
+.mat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.mat{background:var(--sky);border-radius:11px;padding:16px 18px;font-size:.86rem}
+.mat b{display:block;font-family:var(--disp);font-weight:700;font-size:.95rem;margin-bottom:3px}
+.mat p{color:var(--ink-soft);font-size:.82rem}
+@media(max-width:860px){.prod-grid{grid-template-columns:1fr 1fr}.mat-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.mat-grid{grid-template-columns:1fr}}
+
+/* WORK */
+.work-grid{columns:3;column-gap:16px;margin-top:38px}
+.work-grid a{display:block;margin-bottom:16px;border-radius:11px;overflow:hidden;break-inside:avoid;position:relative}
+.work-grid img{width:100%;transition:transform .3s ease}
+.work-grid a:hover img{transform:scale(1.04)}
+@media(max-width:860px){.work-grid{columns:2}}
+@media(max-width:560px){.work-grid{columns:1}}
+
+/* CONTACT */
+.contact{background:var(--navy);color:#fff}
+.contact .eyebrow{color:var(--amber)}
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.contact .lead{color:#B9CBDA}
+.c-rows{margin-top:28px;display:grid;gap:16px}
+.c-row{display:flex;gap:16px;align-items:flex-start}
+.c-row .ic{flex:0 0 44px;height:44px;border-radius:10px;background:rgba(244,157,29,.14);border:1px solid rgba(244,157,29,.4);display:grid;place-items:center;font-size:1.1rem}
+.c-row b{font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);display:block;margin-bottom:3px}
+.c-row a:hover{color:var(--amber)}
+.c-panel{background:var(--navy2);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:32px}
+.c-panel h3{font-family:var(--disp);font-size:1.35rem;margin-bottom:8px}
+.c-panel p{color:#B9CBDA;font-size:.92rem;margin-bottom:22px}
+.c-panel .btn{width:100%;justify-content:center;margin-bottom:12px}
+.c-panel .fine{font-family:var(--mono);font-size:.7rem;color:#7E97AB;text-align:center;margin-top:8px}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+
+/* FOOTER */
+footer{background:#091829;color:#7E97AB;padding:34px 0;font-size:.82rem}
+.foot-in{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.foot-in img{height:52px;border-radius:8px}
+.foot-tag{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em}
+
+/* WHATSAPP FLOAT */
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.28)}
+.wa svg{width:30px;height:30px;fill:#fff}
+
+@media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a href="#top" class="brand"><b>ARKA ENTERPRISES</b><span>SOLAR SOLUTIONS</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#subsidy">Subsidy</a><a href="#products">Products</a><a href="#work">Our Work</a><a href="#contact">Contact</a>
+    </div>
+    <a class="nav-call" href="tel:+918149296066">📞 81492 96066</a>
+  </div>
+</nav>
+
+<header id="top">
+  <img class="hero-img" src="assets/hero.jpg" alt="Rooftop solar installation by ARKA Enterprises">
+  <div class="hero-grad"></div><div class="hero-arc"></div>
+  <div class="wrap hero-in">
+    <div class="hero-kicker">Karjat · Raigad · Maharashtra</div>
+    <h1>Switch to solar.<br>Cut your electricity bill by <em>up to 90%</em>.</h1>
+    <p class="hero-sub">ARKA Enterprises designs and installs complete rooftop solar systems for homes, housing societies, farms and industries — with full government subsidy assistance under PM Surya Ghar Yojana.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-amber" href="https://wa.me/918149296066?text=Hi%20ARKA%20Enterprises%2C%20I%20want%20a%20free%20solar%20site%20survey." target="_blank" rel="noopener">Get a free site survey</a>
+      <a class="btn btn-ghost" href="#subsidy">Check your subsidy →</a>
+    </div>
+    <p class="hero-note">Save Electricity · Save Money · Save Environment</p>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap strip-in">
+    <div class="cell"><b>25+ yrs</b><span>System lifespan</span></div>
+    <div class="cell"><b>Up to 90%</b><span>Bill reduction</span></div>
+    <div class="cell"><b>₹78,000</b><span>Max home subsidy</span></div>
+    <div class="cell"><b>End-to-end</b><span>Survey to service</span></div>
+  </div>
+</div>
+
+<section class="sec" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="eyebrow">About us</div>
+      <h2>Complete solar energy solutions, done right.</h2>
+      <p class="lead">At ARKA Enterprises, we provide complete solar energy solutions for homes, businesses, farms, and industries across the Karjat–Raigad region. Our mission is simple: help you save electricity costs and move towards clean, reliable, and sustainable energy.</p>
+      <ul class="tick-list">
+        <li>On-grid, off-grid and hybrid solar systems</li>
+        <li>Trusted brands — panels, inverters, structures and accessories</li>
+        <li>Government subsidy guidance and full documentation support</li>
+        <li>Site survey, installation and after-sales service under one roof</li>
+      </ul>
+    </div>
+    <div class="about-img"><img src="assets/about.jpg" alt="Solar panels at sunset"></div>
+  </div>
+</section>
+
+<section class="sec alt" id="services">
+  <div class="wrap">
+    <div class="eyebrow">Our services</div>
+    <h2>Three systems. One goal — lower bills.</h2>
+    <p class="lead">Every roof and every load is different. We size and design the right system for your requirement and budget.</p>
+    <div class="svc-grid">
+      <div class="svc">
+        <img src="assets/svc-ongrid.jpg" alt="On-grid rooftop solar system">
+        <div class="svc-body">
+          <div class="svc-tag">☀️ Grid-connected</div>
+          <h3>On-Grid Solar System</h3>
+          <p>Connected directly to the electricity grid — the most popular choice for homes and businesses.</p>
+          <ul><li>Reduce electricity bills</li><li>Net metering facility</li><li>Low maintenance</li><li>Best for homes &amp; commercial use</li></ul>
+        </div>
+      </div>
+      <div class="svc">
+        <img src="assets/svc-offgrid.jpg" alt="Off-grid solar system with battery backup">
+        <div class="svc-body">
+          <div class="svc-tag">🔋 Battery-based</div>
+          <h3>Off-Grid Solar System</h3>
+          <p>Works with batteries and needs no grid connection — full energy independence.</p>
+          <ul><li>Power backup during electricity cuts</li><li>Ideal for rural &amp; remote areas</li><li>Complete energy independence</li></ul>
+        </div>
+      </div>
+      <div class="svc">
+        <img src="assets/svc-hybrid.jpg" alt="Hybrid solar system">
+        <div class="svc-body">
+          <div class="svc-tag">⚡ Best of both</div>
+          <h3>Hybrid Solar System</h3>
+          <p>Combines solar panels, batteries and the grid for uninterrupted, smart power.</p>
+          <ul><li>Continuous power supply</li><li>Backup during load shedding</li><li>Maximum energy savings</li><li>Smart energy management</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="eyebrow">Why ARKA</div>
+    <h2>Why customers choose ARKA Enterprises</h2>
+    <div class="why-grid">
+      <div class="why"><div class="ic">🛡️</div><b>Quality products</b><p>Trusted, high-quality panels, inverters, structures and accessories built for long-lasting performance.</p></div>
+      <div class="why"><div class="ic">🔧</div><b>Expert installation</b><p>Safe, professional installation by an experienced team — with complete support at every step.</p></div>
+      <div class="why"><div class="ic">₹</div><b>Affordable pricing</b><p>Competitive prices with the best quality and service — no compromises.</p></div>
+      <div class="why"><div class="ic">🏛️</div><b>Subsidy assistance</b><p>Complete guidance and documentation for solar subsidies under government schemes.</p></div>
+      <div class="why"><div class="ic">🤝</div><b>Complete support</b><p>From site survey to installation to after-sales service — we handle everything.</p></div>
+      <div class="why"><div class="ic">⚡</div><b>Customised &amp; fast</b><p>Solutions tailored to your energy needs and budget, with quick response and on-time completion.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="subsidy">
+  <div class="wrap">
+    <div class="eyebrow">Government subsidy</div>
+    <h2>The government pays a big part of your system.</h2>
+    <p class="lead">Under PM Surya Ghar: Muft Bijli Yojana, residential rooftop solar gets direct Central Financial Assistance. We handle the application, documentation and net-metering approval for you.</p>
+    <div class="sub-grid">
+      <div class="bill">
+        <h3>Residential rooftop</h3>
+        <div class="sub-note">Central Financial Assistance (CFA) — per household</div>
+        <div class="bill-row"><span>1 kW system</span><b>₹30,000</b></div>
+        <div class="bill-row"><span>2 kW system</span><b>₹60,000</b></div>
+        <div class="bill-row"><span>3 kW &amp; above</span><b>₹78,000</b></div>
+        <div class="bill-foot">Documents: electricity bill · Aadhaar · PAN · bank details · roof ownership proof. Subject to scheme terms &amp; DISCOM net-metering approval.</div>
+      </div>
+      <div class="sub-side">
+        <div class="sub-card">
+          <h3>Housing societies (RWA / CHS)</h3>
+          <p>Rooftop solar for common facilities — lifts, water pumps, common lighting, clubhouse and CCTV — cuts common-area bills by <strong>50–90%</strong>. Societies get <strong>₹18,000 per kW</strong> subsidy under PM Surya Ghar.</p>
+          <div class="chiplist">
+            <span class="chip">Society registration</span><span class="chip">Electricity bill</span><span class="chip">Society PAN</span><span class="chip">Resolution copy</span><span class="chip">Net metering</span>
+          </div>
+          <div class="soc-imgs">
+            <img src="assets/society-1.jpg" alt="Housing society rooftop solar plant">
+            <img src="assets/society-2.jpg" alt="Apartment building with rooftop solar panels">
+          </div>
+        </div>
+        <a class="btn btn-navy" href="https://wa.me/918149296066?text=Hi%2C%20I%20want%20to%20know%20my%20solar%20subsidy%20eligibility." target="_blank" rel="noopener">Check my eligibility on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="products">
+  <div class="wrap">
+    <div class="eyebrow">Our products</div>
+    <h2>Trusted brands. Complete material.</h2>
+    <p class="lead">We supply and install premium inverter kits and every major panel technology, along with the full balance-of-system material for a safe, long-lasting plant.</p>
+
+    <div class="prod-block">
+      <h3>Inverters</h3>
+      <div class="prod-grid">
+        <div class="prod"><img src="assets/inv-1.jpg" alt="Solar inverter"><span>Solar inverter</span></div>
+        <div class="prod"><img src="assets/inv-2.jpg" alt="Installed solar inverter"><span>On-grid inverter</span></div>
+        <div class="prod"><img src="assets/inv-3.jpg" alt="TATA solar inverter kit"><span>TATA kit</span></div>
+        <div class="prod"><img src="assets/inv-4.jpg" alt="Waaree solar inverter kit"><span>WAAREE kit</span></div>
+      </div>
+    </div>
+
+    <div class="prod-block">
+      <h3>Solar panels</h3>
+      <div class="prod-grid">
+        <div class="prod"><img src="assets/panel-1.jpg" alt="TOPCon solar panel"><span>TOPCon</span></div>
+        <div class="prod"><img src="assets/panel-2.jpg" alt="Mono PERC solar panel"><span>Mono PERC</span></div>
+        <div class="prod"><img src="assets/panel-3.jpg" alt="Bifacial solar panel"><span>Bifacial</span></div>
+        <div class="prod"><img src="assets/panel-4.jpg" alt="Half-cut PERC solar panel"><span>Half-Cut PERC</span></div>
+      </div>
+    </div>
+
+    <div class="prod-block">
+      <h3>Structure, safety &amp; balance of system</h3>
+      <div class="mat-grid">
+        <div class="mat"><b>GI pipe &amp; purlin structure</b><p>Rust-resistant galvanised mounting — stable in all weather for decades.</p></div>
+        <div class="mat"><b>Polycab wires</b><p>High-purity copper, fire-resistant insulation, low power loss.</p></div>
+        <div class="mat"><b>Earthing kit</b><p>Earthing rod, pit cover and chemical bag for safe fault protection.</p></div>
+        <div class="mat"><b>Lightning arrester</b><p>Spike, base and earthing channel to protect the plant from strikes.</p></div>
+        <div class="mat"><b>ACDB / DCDB boxes</b><p>Overload, short-circuit and surge protection on both AC and DC sides.</p></div>
+        <div class="mat"><b>Net &amp; generation meters</b><p>Accurate import/export billing and generation monitoring.</p></div>
+        <div class="mat"><b>Clamps &amp; fasteners</b><p>Clamps, spring nuts and Allen bolts for a firm, stable panel mount.</p></div>
+        <div class="mat"><b>MC4 connectors</b><p>Waterproof, secure panel-to-cable connections in all weather.</p></div>
+        <div class="mat"><b>Wiring conduits</b><p>Precision pipes for neat, protected and durable cable routing.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="work">
+  <div class="wrap">
+    <div class="eyebrow">Our work</div>
+    <h2>Installed. Generating. Saving.</h2>
+    <p class="lead">Real rooftop and ground-mount installations completed by the ARKA team.</p>
+    <div class="work-grid">
+      <a><img src="assets/work-1.jpg" alt="Completed solar installation 1" loading="lazy"></a>
+      <a><img src="assets/work-2.jpg" alt="Completed solar installation 2" loading="lazy"></a>
+      <a><img src="assets/work-3.jpg" alt="Completed solar installation 3" loading="lazy"></a>
+      <a><img src="assets/work-4.jpg" alt="Completed solar installation 4" loading="lazy"></a>
+      <a><img src="assets/work-5.jpg" alt="Completed solar installation 5" loading="lazy"></a>
+      <a><img src="assets/work-6.jpg" alt="Completed solar installation 6" loading="lazy"></a>
+      <a><img src="assets/work-7.jpg" alt="Completed solar installation 7" loading="lazy"></a>
+      <a><img src="assets/work-8.jpg" alt="Completed solar installation 8" loading="lazy"></a>
+      <a><img src="assets/work-9.jpg" alt="Completed solar installation 9" loading="lazy"></a>
+      <a><img src="assets/work-10.jpg" alt="Completed solar installation 10" loading="lazy"></a>
+      <a><img src="assets/work-11.jpg" alt="Completed solar installation 11" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow">Contact</div>
+      <h2>Start with a free site survey.</h2>
+      <p class="lead">Tell us about your roof and your electricity bill — we'll suggest the right system size, exact subsidy amount and a clear quote.</p>
+      <div class="c-rows">
+        <div class="c-row"><div class="ic">📞</div><div><b>Call / WhatsApp</b><a href="tel:+918149296066">+91 81492 96066</a></div></div>
+        <div class="c-row"><div class="ic">✉️</div><div><b>Email</b><a href="mailto:arkaenterprises21@gmail.com">arkaenterprises21@gmail.com</a></div></div>
+        <div class="c-row"><div class="ic">📍</div><div><b>Address</b>At Post Chinchavali (Bhangarwadi), Tal. Karjat, Dist. Raigad — 410201, Maharashtra</div></div>
+      </div>
+    </div>
+    <div class="c-panel">
+      <h3>Get your solar quote</h3>
+      <p>Message us on WhatsApp with your latest electricity bill — we'll reply with system size, subsidy and price.</p>
+      <a class="btn btn-amber" href="https://wa.me/918149296066?text=Hi%20ARKA%20Enterprises%2C%20please%20share%20a%20solar%20quote.%20My%20monthly%20bill%20is%20%E2%82%B9____." target="_blank" rel="noopener">WhatsApp us now</a>
+      <a class="btn btn-ghost" href="tel:+918149296066">Call +91 81492 96066</a>
+      <div class="fine">Serving Karjat, Raigad &amp; nearby regions</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <img src="assets/logo.jpg" alt="ARKA Enterprises logo">
+    <div class="foot-tag">SAVE ELECTRICITY · SAVE MONEY · SAVE ENVIRONMENT</div>
+    <div>© 2026 ARKA Enterprises, Karjat. All rights reserved.</div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/918149296066" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 .8C7.6.8.8 7.6.8 16c0 2.7.7 5.3 2 7.6L.8 31.2l7.8-2c2.2 1.2 4.7 1.9 7.4 1.9 8.4 0 15.2-6.8 15.2-15.1S24.4.8 16 .8zm0 27.6c-2.4 0-4.7-.7-6.7-1.9l-.5-.3-4.6 1.2 1.2-4.5-.3-.5c-1.3-2-2-4.4-2-6.8C3.1 8.9 8.9 3.1 16 3.1S28.9 8.9 28.9 16 23.1 28.4 16 28.4zm7.1-9.4c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.3-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.7.1-.3.1-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7h-.8c-.3 0-.7.1-1.1.5-.4.4-1.4 1.4-1.4 3.4s1.5 3.9 1.7 4.2c.2.3 2.9 4.4 7 6.2 1 .4 1.7.7 2.3.9 1 .3 1.9.3 2.6.2.8-.1 2.3-1 2.7-1.9.3-.9.3-1.7.2-1.9-.1-.2-.3-.3-.7-.5z"/></svg>
+</a>
+
+</body>
+</html>
